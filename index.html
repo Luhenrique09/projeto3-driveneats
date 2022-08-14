@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="shortcut icon" href="./img/comida.png" type="image/x-icon">
+    
+    <title>Drien Eats</title>
+</head>
+<body>
+    <div class="todo-conteudo">
+        <div class="titulo-topo">
+        <div class="topo">
+            <h1>DrivenEats</h1>
+            <h4>Sua comida em 6 minutos</h4>
+        </div>
+    </div>
+        <!--FIM DO TOPO-->
+<div class="conteiner">
+        <div class="conteudo">
+            <h2>Primeiro, seu prato</h2>
+            <div class="pratos">
+                
+                <div onclick="principal('.frango')" class="caixas-menu frango" >
+                   
+                    <img src="./img/frango_yin_yang 1.png" />
+                    <h2 id="nome">Frango yin yang</h2>
+                    <h3>Um pouco de batata, um pouco de salada</h3>
+                    <h4 id="valor">R$14,90</h4>
+                    <ion-icon class="esconde" name="checkmark-circle" ></ion-icon>
+                   
+                </div>
+            
+                <div onclick="principal('.canelone')" class="caixas-menu canelone" >
+                    
+                    <img src="./img/canelone.png" />
+                    <h2 id="nome">Canelone do supra</h2>
+                    <h3>Presunto cozido e mussarela de búfala</h3>
+                    <h4 id="valor">R$19,90</h4>
+                    <ion-icon class="esconde" name="checkmark-circle" ></ion-icon>
+
+                </div>
+
+                <div onclick="principal('.moqueca')"  class="caixas-menu moqueca">
+                   
+                    <img src="./img/moqueca-vegana.png" />
+                    <h2 id="nome">Moqueca vegana</h2>
+                    <h3>Moqueca de caju, banana-da-terra</h3>
+                    <h4 id="valor">R$24,90</h4>
+                    <ion-icon class="esconde" name="checkmark-circle" ></ion-icon>
+
+                </div>
+
+                <div onclick="principal('.parmegiana')" class="caixas-menu parmegiana">
+                    <img src="./img/parmegiana.png" />
+                    <h2 id="nome">Parmegiana</h2>
+                    <h3>Com massa ao alho e óleo especial</h3>
+                    <h4 id="valor">R$29,90</h4>
+                    <ion-icon class="esconde" name="checkmark-circle" ></ion-icon>
+
+                </div>
+            </div>
+
+            <h2>Agora, sua bedida</h2>
+            <div class="bebidas">
+                <div onclick="bebida('.coca')" class="caixas-menu coca" >
+                    <img src="./img/coquinha_gelada 1.png" />
+                    <h2 id="nome">Coquinha gelada</h2>
+                    <h3>Lata 350ml</h3>
+                    <h4 id="valor">R$4,90</h4>
+                    <ion-icon class="esconde" name="checkmark-circle" ></ion-icon>
+
+                </div>
+
+                <div onclick="bebida('.suco')" class="caixas-menu suco" >
+                    <img src="./img/suco.png" />
+                    <h2 id="nome">Suco</h2>
+                    <h3>Lata 335ml</h3>
+                    <h4 id="valor">R$6,90</h4>
+                    <ion-icon class="esconde" name="checkmark-circle" ></ion-icon>
+
+                </div>
+
+                <div onclick="bebida('.guarana')" class="caixas-menu guarana" >
+                    <img src="./img/guarana.png" />
+                    <h2 id="nome">Guaraná</h2>
+                    <h3>Lata 269ml</h3>
+                    <h4 id="valor">R$3,90</h4>
+                    <ion-icon class="esconde" name="checkmark-circle" ></ion-icon>
+
+                </div>
+            </div>
+
+            <h2>Por fim, sua sobremesa</h2>
+            <div class="sobremesas">
+                <div onclick="sobremesa('.pudim')" class="caixas-menu pudim" >
+                    <img src="./img/pudim 1.png" />
+                    <h2 id="nome">Pudim</h2>
+                    <h3>Apenas pudim</h3>
+                    <h4 id="valor">R$7,90</h4>
+                    <ion-icon class="esconde" name="checkmark-circle" ></ion-icon>
+
+                </div>
+
+                <div onclick="sobremesa('.donuts')" class="caixas-menu donuts" >
+                    <img src="./img/donuts.png" />
+                    <h2 id="nome">Donuts</h2>
+                    <h3>3 unidades</h3>
+                    <h4 id="valor">R$10,90</h4>
+                    <ion-icon class="esconde" name="checkmark-circle" ></ion-icon>
+
+                </div>
+
+                <div onclick="sobremesa('.cheesecake')" class="caixas-menu cheesecake" >
+                    <img src="./img/Cheesecake.png" />
+                    <h2 id="nome">Cheesecake</h2>
+                    <h3>Com frutas vermelhas</h3>
+                    <h4 id="valor">R$8,90</h4>
+                    <ion-icon class="esconde" name="checkmark-circle" ></ion-icon>
+
+                </div>
+
+                <div onclick="sobremesa('.torta')" class="caixas-menu torta" >
+                    <img src="./img/mini-torta.png" />
+                    <h2 id="nome">Mini torta</h2>
+                    <h3>Apenas sabor morango</h3>
+                    <h4 id="valor">R$5,90</h4>
+                    <ion-icon class="esconde" name="checkmark-circle" ></ion-icon>
+
+                </div>
+                
+            </div> 
+
+        </div>
+    </div>
+        <!--FIM DO MENU ESCOLHA-->
+
+       <div class="inferior">
+        <button    class=" fechar-pedido">
+             Selecione os 3 itens <br>para fechar o pedido
+        </button>
+
+        <div class="inferior esconde">
+           <button  onclick="pedido()"  class=" confirmar-pedido">
+              Fechar pedido
+        </button>
+        </div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
