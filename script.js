@@ -83,7 +83,7 @@ function confirmar(finalizar){
 	    elemento.classList.add('esconde');
     
     }
-    confirmar();
+    
     
 }
 
